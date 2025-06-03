@@ -43,17 +43,15 @@ function App() {
         </div>
         <div className="bottom">
           <div className="feels">
-            <p className="bold">
-              {data.main ? <h1>{data.main.feels_like}</h1> : null}
-            </p>
+            <p>{data.main ? <p>{data.main.feels_like}</p> : null}</p>
             <p>Feels like</p>
           </div>
           <div className="humidity">
-            {data.main ? <h1>{data.main.humidity}%</h1> : null}
+            {data.main ? <p>{data.main.humidity}%</p> : null}
             <p>Humidity</p>
           </div>
           <div className="wind">
-            {data.main ? <h1>{data.wind.speed}mph</h1> : null}
+            {data.main ? <p>{data.wind.speed}mph</p> : null}
             <p>Wind Speed</p>
           </div>
         </div>
